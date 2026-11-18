@@ -957,11 +957,11 @@
   <!-- =====================================================================
        MODAL 1: 6-PART INTERACTIVE CASE STUDY MODAL
   ====================================================================== -->
-  <div id="caseStudyModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-sm">
-    <div class="surface-card border border-adaptive rounded-3xl max-w-3xl w-full max-h-[88vh] flex flex-col shadow-2xl overflow-hidden">
+  <div id="caseStudyModal" class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-6 md:p-8 bg-black/80 backdrop-blur-sm">
+    <div class="surface-card border border-adaptive rounded-3xl max-w-5xl w-full max-h-[92vh] flex flex-col shadow-2xl overflow-hidden">
       <!-- Modal Top Bar -->
-      <div class="px-6 py-4 border-b border-adaptive flex items-center justify-between gap-4">
-        <span id="modalCategoryTag" class="px-3 py-1 rounded-full text-xs font-extrabold bg-terracotta/15 text-terracotta">Case Study</span>
+      <div class="px-6 sm:px-8 py-4 sm:py-5 border-b border-adaptive flex items-center justify-between gap-4">
+        <span id="modalCategoryTag" class="px-3.5 py-1.5 rounded-full text-xs font-extrabold bg-terracotta/15 text-terracotta">Case Study</span>
         <button id="closeCaseStudyModal" aria-label="Close Case Study" class="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
@@ -970,10 +970,10 @@
       </div>
 
       <!-- Modal Scrollable Content -->
-      <div class="p-6 sm:p-8 overflow-y-auto modal-scroll space-y-6">
+      <div class="p-6 sm:p-10 overflow-y-auto modal-scroll space-y-6">
         <div>
-          <h3 id="modalTitle" class="font-display font-extrabold text-2xl sm:text-3xl leading-tight">Project Title</h3>
-          <p id="modalSubtitle" class="text-sm font-bold text-terracotta mt-1">Company & Role Context</p>
+          <h3 id="modalTitle" class="font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl leading-tight">Project Title</h3>
+          <p id="modalSubtitle" class="text-sm sm:text-base font-bold text-terracotta mt-1.5">Company & Role Context</p>
         </div>
 
         <div id="modalCoverWrap" class="rounded-2xl overflow-hidden aspect-[16/8] bg-obsidian">
@@ -982,34 +982,34 @@
 
         <!-- 6-Part Workflow Sections -->
         <div class="grid grid-cols-1 gap-5">
-          <div class="p-5 rounded-2xl surface-secondary border border-adaptive">
+          <div class="p-5 sm:p-6 rounded-2xl surface-secondary border border-adaptive">
             <h4 class="font-display font-extrabold text-sm uppercase tracking-wider text-terracotta mb-2">1. Overview</h4>
-            <p id="modalOverview" class="text-sm text-adaptive-muted leading-relaxed"></p>
+            <p id="modalOverview" class="text-sm sm:text-base text-adaptive-muted leading-relaxed"></p>
           </div>
 
-          <div class="p-5 rounded-2xl surface-secondary border border-adaptive">
+          <div class="p-5 sm:p-6 rounded-2xl surface-secondary border border-adaptive">
             <h4 class="font-display font-extrabold text-sm uppercase tracking-wider text-terracotta mb-2">2. Problem</h4>
-            <p id="modalProblem" class="text-sm text-adaptive-muted leading-relaxed"></p>
+            <p id="modalProblem" class="text-sm sm:text-base text-adaptive-muted leading-relaxed"></p>
           </div>
 
-          <div class="p-5 rounded-2xl surface-secondary border border-adaptive">
+          <div class="p-5 sm:p-6 rounded-2xl surface-secondary border border-adaptive">
             <h4 class="font-display font-extrabold text-sm uppercase tracking-wider text-terracotta mb-2">3. Purpose & Goals</h4>
-            <p id="modalGoals" class="text-sm text-adaptive-muted leading-relaxed"></p>
+            <p id="modalGoals" class="text-sm sm:text-base text-adaptive-muted leading-relaxed"></p>
           </div>
 
-          <div class="p-5 rounded-2xl surface-secondary border border-adaptive">
+          <div class="p-5 sm:p-6 rounded-2xl surface-secondary border border-adaptive">
             <h4 class="font-display font-extrabold text-sm uppercase tracking-wider text-terracotta mb-2">4. Impact & Result</h4>
-            <p id="modalImpact" class="text-sm text-adaptive-muted leading-relaxed"></p>
+            <p id="modalImpact" class="text-sm sm:text-base text-adaptive-muted leading-relaxed"></p>
           </div>
 
-          <div class="p-5 rounded-2xl surface-secondary border border-adaptive">
+          <div class="p-5 sm:p-6 rounded-2xl surface-secondary border border-adaptive">
             <h4 class="font-display font-extrabold text-sm uppercase tracking-wider text-terracotta mb-2">5. Development Roadmap</h4>
-            <p id="modalRoadmap" class="text-sm text-adaptive-muted leading-relaxed"></p>
+            <p id="modalRoadmap" class="text-sm sm:text-base text-adaptive-muted leading-relaxed"></p>
           </div>
 
-          <div class="p-5 rounded-2xl surface-secondary border border-adaptive">
+          <div class="p-5 sm:p-6 rounded-2xl surface-secondary border border-adaptive">
             <h4 class="font-display font-extrabold text-sm uppercase tracking-wider text-terracotta mb-2">6. Conclusion & Learning</h4>
-            <p id="modalConclusion" class="text-sm text-adaptive-muted leading-relaxed"></p>
+            <p id="modalConclusion" class="text-sm sm:text-base text-adaptive-muted leading-relaxed"></p>
           </div>
         </div>
       </div>
@@ -1019,25 +1019,25 @@
   <!-- =====================================================================
        MODAL 2: CROSS-FUNCTIONAL EXPERIENCE RESPONSIBILITIES MODAL
   ====================================================================== -->
-  <div id="experienceModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-sm">
-    <div class="surface-card border border-adaptive rounded-3xl max-w-xl w-full max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
-      <div class="px-6 py-4 border-b border-adaptive flex items-center justify-between">
-        <span id="expModalPeriod" class="text-xs font-extrabold text-terracotta uppercase tracking-wider">Period</span>
+  <div id="experienceModal" class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-6 md:p-8 bg-black/80 backdrop-blur-sm">
+    <div class="surface-card border border-adaptive rounded-3xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
+      <div class="px-6 sm:px-8 py-4 sm:py-5 border-b border-adaptive flex items-center justify-between">
+        <span id="expModalPeriod" class="text-xs sm:text-sm font-extrabold text-terracotta uppercase tracking-wider">Period</span>
         <button id="closeExperienceModal" aria-label="Close Experience Details" class="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
-      <div class="p-6 sm:p-8 overflow-y-auto modal-scroll space-y-4">
+      <div class="p-6 sm:p-10 overflow-y-auto modal-scroll space-y-5">
         <div>
-          <h3 id="expModalRole" class="font-display font-extrabold text-2xl">Role Title</h3>
-          <p id="expModalCompany" class="text-sm font-bold text-adaptive-muted mt-1">Company & Type</p>
+          <h3 id="expModalRole" class="font-display font-extrabold text-2xl sm:text-3xl">Role Title</h3>
+          <p id="expModalCompany" class="text-sm sm:text-base font-bold text-adaptive-muted mt-1">Company & Type</p>
         </div>
-        <div class="inline-block px-3.5 py-1.5 rounded-full text-xs font-extrabold bg-terracotta/15 text-terracotta" id="expModalMetric">
+        <div class="inline-block px-4 py-1.5 rounded-full text-xs sm:text-sm font-extrabold bg-terracotta/15 text-terracotta" id="expModalMetric">
           Key Highlight
         </div>
-        <ul id="expModalBullets" class="space-y-3 text-sm text-adaptive-muted list-disc pl-5 leading-relaxed pt-2">
+        <ul id="expModalBullets" class="space-y-3.5 text-sm sm:text-base text-adaptive-muted list-disc pl-5 leading-relaxed pt-2">
           <!-- Populated dynamically -->
         </ul>
       </div>
